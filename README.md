@@ -56,7 +56,7 @@ Install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/older-downloa
 - Universal Windows Platform development
 
 ## 2a. Datasets
-Download and extract the [HAM10000](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T) and [ISIC-2016](https://challenge.isic-archive.com/data/) (Task-3) ```datasets```, along with their associated ground truth files. Then, create a folder named ```datasets``` in the root directory and organize the folders and ground truth files in the following order:
+Download and extract the [HAM10000](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T) and [ISIC-2016](https://challenge.isic-archive.com/data/) (Task-3) `datasets`, along with their associated ground truth files. Then, create a folder named `datasets` in the root directory and organize the folders and ground truth files in the following order:
 
 ```
 datasets/
@@ -154,7 +154,7 @@ scripts/
 Note that the saving of the trained `models` on [Kaggle](https://www.kaggle.com/) must be conducted manually. The details are provided on the scripts and must be followed accordingly.
 
 ## 2f. Performance evaluation
-The `performance` evaluation of all our trained models can be done anytime, provided that the models reside in the following folder order.
+The `performance` evaluation of all our pre-trained models can be done anytime, provided that the models reside in the following folder order.
 
 ```
 models/
@@ -207,7 +207,7 @@ HAM10000_model_test.ipynb
 ```
 
 ## 3. Pre-trained models
-We provide our `pre-trained` models on [GitHub Releases]() for reproducibility. Below are the best-performing `pre-trained` models.
+We provide our pre-trained models on [GitHub Releases]() for reproducibility. Below are the best-performing pre-trained models.
 
 | Dataset | Model | Filtering | Sensitivity (%) | False Negative | Download |
 | -------- | -------- | -------- | :--------: | :--------: | -------- |
