@@ -1,0 +1,69 @@
+# ============================================== csf-model ============================================== #
+
+## ========= Conda Environment =========
+conda create -n csf-model Python=3.10.9
+conda activate csf-model
+
+## ========= pip =========
+conda install pip==22.3.1
+
+## ========= jupyter kernel =========
+pip install ipykernel==6.19.2
+python -m ipykernel install --user --name csf-model --display-name "Python (csf-model)"
+
+## ========= PyTorch =========
+conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+
+## ========= General =========
+pip install GitPython==3.1.31
+pip install numpy==1.23.5
+pip install pandas==1.5.3
+pip install opencv-python==4.7.0.72
+pip install matplotlib==3.7.0
+pip install seaborn==0.11.1
+pip install tqdm==4.65.0
+pip install prettytable==3.8.0
+pip install scikit-learn==1.2.1
+pip install ipywidgets==7.6.5
+pip install umap-learn==0.5.3
+
+## ========= Hugging Face =========
+pip install transformers==4.30.2
+pip install evaluate==0.4.0
+pip install datasets==2.13.1
+pip install accelerate==0.20.3
+
+# ============================================== csf-ovs ============================================== #
+
+## ========= Conda Environment =========
+conda create -n csf-ovs Python=3.7
+conda activate csf-ovs
+
+## ========= pip =========
+conda install pip
+
+## ========= jupyter kernel =========
+pip install ipykernel
+python -m ipykernel install --user --name csf-ovs --display-name "Python (csf-ovs)"
+
+## ========= PyTorch =========
+pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+pip install timm==0.4.12 ftfy==6.1.1 ninja==1.10.2
+pip install click==8.1.5
+pip install opensimplex==0.4.2
+pip install requests scipy
+
+## ========= TensorFlow =========
+pip install "tensorflow<2.11"
+
+## ========= General =========
+pip install GitPython
+pip install numpy
+pip install pandas
+pip install opencv-python
+pip install matplotlib
+pip install seaborn
+pip install tqdm
+pip install prettytable
+pip install scikit-learn
+pip install ipywidgets
