@@ -207,15 +207,15 @@ HAM10000_model_test.ipynb
 ```
 
 ## 3. Pre-trained models
-We provide our pre-trained models on [GitHub Releases]() for reproducibility. Below are the best-performing pre-trained models.
+We provide our pre-trained models on [GitHub Releases](https://github.com/mominul-ssv/cossif/releases/tag/v1.0.0) for reproducibility. Below are the best-performing pre-trained models.
 
 | Dataset | Model | Filtering | Sensitivity (%) | False Negative | Download |
 | -------- | -------- | -------- | :--------: | :--------: | -------- |
-| ISIC-2016 | ViT | FAGT (α = 0.75) | **72.00** | **21** |[download]() |
+| ISIC-2016 | ViT | FAGT (α = 0.75) | **72.00** | **21** |[download](https://github.com/mominul-ssv/cossif/releases/download/v1.0.0/isic-2016-vit-fagt-alpha-1.zip) |
 
 | Dataset | Model | Filtering | Accuracy (%) | F1-score (%) | Download |
 | -------- | -------- | -------- | :--------: | :--------: | -------- |
-| HAM10000 | ConvNeXt | FAGT (α = 0.85) | **94.44** | **84.06** | [download]() |
+| HAM10000 | ConvNeXt | FAGT (α = 0.85) | **94.44** | **84.06** | [download](https://github.com/mominul-ssv/cossif/releases/download/v1.0.0/ham10000-convnext-fagt-alpha-3.zip) |
 
 ## 4. Demo
 
