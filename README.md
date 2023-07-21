@@ -56,7 +56,7 @@ Install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/older-downloa
 - Universal Windows Platform development
 
 ## 2a. Datasets
-Download and extract the [HAM10000](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T) and [ISIC-2016](https://challenge.isic-archive.com/data/) (Task-3) `datasets`, along with their associated ground truth files. Then, create a folder named `datasets` in the root directory and organize the folders and ground truth files in the following order:
+Download and extract the [HAM10000](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T) and [ISIC-2016](https://challenge.isic-archive.com/data/) (Task-3) datasets, along with their associated ground truth files. Then, create a folder named datasets in the root directory and organize the folders and ground truth files in the following order:
 
 ```
 datasets/
@@ -75,7 +75,7 @@ datasets/
 Note that you may need to rename the file and folder names as required.
 
 ## 2b. Pre-processing
-To begin the `pre-processing`, run the following scripts associated with each dataset:
+To begin the pre-processing, run the following scripts associated with each dataset:
 
 ```
 ISIC-2016_pre-processing.ipynb
@@ -85,7 +85,7 @@ HAM10000_pre-processing.ipynb
 ```
 
 ## 2c. Oversampling & filtering
-For `oversampling`, run the following scripts associated with each dataset:
+For oversampling, run the following scripts associated with each dataset:
 
 ```
 ISIC-2016_oversampling.ipynb
@@ -94,9 +94,9 @@ ISIC-2016_oversampling.ipynb
 HAM10000_oversampling.ipynb
 ```
 
-During the execution of the `oversampling` scripts, there comes a certain point where it becomes necessary to also execute the `filtering` and `GAN` training scripts.
+During the execution of the oversampling scripts, there comes a certain point where it becomes necessary to also execute the filtering and GAN training scripts.
 
-For `filtering`, run the following scripts associated with each dataset:
+For filtering, run the following scripts associated with each dataset:
 
 ```
 ISIC-2016_FBGT.ipynb
@@ -107,7 +107,7 @@ HAM10000_FBGT.ipynb
 HAM10000_FAGT.ipynb
 ```
 
-For `GAN` training, run the following scripts associated with each dataset on [Kaggle](https://www.kaggle.com/):
+For GAN training, run the following scripts associated with each dataset on [Kaggle](https://www.kaggle.com/):
 
 ```
 ISIC-2016_GAN_train.ipynb
@@ -116,10 +116,10 @@ ISIC-2016_GAN_train.ipynb
 HAM10000_GAN_train.ipynb
 ```
 
-Note that the saving of the trained `GANs` on [Kaggle](https://www.kaggle.com/) must be conducted manually. The details are provided on the scripts and must be followed accordingly.
+Note that the saving of the trained GANs on [Kaggle](https://www.kaggle.com/) must be conducted manually. The details are provided on the scripts and must be followed accordingly.
 
 ## 2d. Dataset Augmentation
-To achieve the final `augmented` datasets associated with each different experiment, run the following codes.
+To achieve the final augmented datasets associated with each different experiment, run the following codes.
 
 ```
 ISIC-2016_augment_ds.ipynb
@@ -129,7 +129,7 @@ HAM10000_augment_ds.ipynb
 ```
 
 ## 2e. Training Models
-To train the `models` on the oversampled ISIC-2016 dataset and its filtered variants, navigate to the following directory and run the scripts. 
+To train the models on the oversampled ISIC-2016 dataset and its filtered variants, navigate to the following directory and run the scripts. 
 
 ```
 scripts/
@@ -140,7 +140,7 @@ scripts/
 |------ ViT/
 ```
 
-To train the `models` on the oversampled HAM10000 dataset and its filtered variants, navigate to the following directory and upload the scripts on [Kaggle](https://www.kaggle.com/) along with its corresponding variants of the dataset. 
+To train the models on the oversampled HAM10000 dataset and its filtered variants, navigate to the following directory and upload the scripts on [Kaggle](https://www.kaggle.com/) along with its corresponding variants of the dataset. 
 
 ```
 scripts/
@@ -151,10 +151,10 @@ scripts/
 |------ ViT/
 ```
 
-Note that the saving of the trained `models` on [Kaggle](https://www.kaggle.com/) must be conducted manually. The details are provided on the scripts and must be followed accordingly.
+Note that the saving of the trained models on [Kaggle](https://www.kaggle.com/) must be conducted manually. The details are provided on the scripts and must be followed accordingly.
 
 ## 2f. Performance evaluation
-The `performance` evaluation of all our pre-trained models can be done anytime, provided that the models reside in the following folder order.
+The performance evaluation of all our pre-trained models can be done anytime, provided that the models reside in the following folder order.
 
 ```
 models/
@@ -194,13 +194,13 @@ models/
 |------ ISIC-2016-vit-no-filtering
 ```
 
-To evaluate the `performance` of all trained models on the oversampled ISIC-2016 dataset and its variants, run the following script:
+To evaluate the performance of all trained models on the oversampled ISIC-2016 dataset and its variants, run the following script:
 
 ```
 ISIC-2016_model_test.ipynb
 ```
 
-To evaluate the `performance` of all trained models on the oversampled HAM10000 dataset and its variants, run the following script:
+To evaluate the performance of all trained models on the oversampled HAM10000 dataset and its variants, run the following script:
 
 ```
 HAM10000_model_test.ipynb
