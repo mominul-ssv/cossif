@@ -20,21 +20,21 @@ The following notebooks require the `csf-ovs` environment to be activated.
 ```
 scripts/
 |-- HAM10000/
+|---- HAM10000_filtering/
+|------ HAM10000_FAGT.ipynb
+|------ HAM10000_FBGT.ipynb
 |---- HAM10000_GAN_train.ipynb
 |---- HAM10000_augment_ds.ipynb
 |---- HAM10000_oversampling.ipynb
 |---- HAM10000_pre-processing.ipynb
-|---- HAM10000_filtering/
-|------ HAM10000_FAGT.ipynb
-|------ HAM10000_FBGT.ipynb
 |-- ISIC-2016/
+|---- ISIC-2016_filtering/
+|------ ISIC-2016_FAGT.ipynb
+|------ ISIC-2016_FBGT.ipynb
 |---- ISIC-2016_GAN_train.ipynb
 |---- ISIC-2016_augment_ds.ipynb
 |---- ISIC-2016_oversampling.ipynb
 |---- ISIC-2016_pre-processing.ipynb
-|---- ISIC-2016_filtering/
-|------ ISIC-2016_FAGT.ipynb
-|------ ISIC-2016_FBGT.ipynb
 ```
 
 Run the following to activate the `csf-ovs` environment.
@@ -154,6 +154,46 @@ scripts/
 Note that the saving of the trained `models` on [Kaggle](https://www.kaggle.com/) must be conducted manually. The details are provided on the scripts and must be followed accordingly.
 
 ## 2f. Performance evaluation
+The `performance` evaluation of all our trained models can be done anytime, provided that the models reside in the following folder order.
+
+```
+models/
+|-- HAM10000/
+|---- ConvNeXt/
+|------ ham10000-convnext-fagt-alpha-3
+|------ ham10000-convnext-fbgt-alpha-1
+|------ ham10000-convnext-no-filtering
+|---- Swin-Transformer/
+|------ ham10000-swin-fagt-alpha-1
+|------ ham10000-swin-fagt-alpha-2
+|------ ham10000-swin-fagt-alpha-3
+|------ ham10000-swin-fbgt-alpha-1
+|------ ham10000-swin-fbgt-alpha-2
+|------ ham10000-swin-fbgt-alpha-3
+|------ ham10000-swin-no-filtering
+|---- ViT/
+|------ ham10000-vit-fagt-alpha-3
+|------ ham10000-vit-fbgt-alpha-1
+|------ ham10000-vit-no-filtering
+|-- ISIC-2016/
+|---- ConvNeXt/
+|------ ISIC-2016-convnext-fagt-alpha-3
+|------ ISIC-2016-convnext-fbgt-alpha-1
+|------ ISIC-2016-convnext-no-filtering
+|---- Swin-Transformer/
+|------ ISIC-2016-swin-fagt-alpha-1
+|------ ISIC-2016-swin-fagt-alpha-2
+|------ ISIC-2016-swin-fagt-alpha-3
+|------ ISIC-2016-swin-fbgt-alpha-1
+|------ ISIC-2016-swin-fbgt-alpha-2
+|------ ISIC-2016-swin-fbgt-alpha-3
+|------ ISIC-2016-swin-no-filtering
+|---- ViT/
+|------ ISIC-2016-vit-fagt-alpha-3
+|------ ISIC-2016-vit-fbgt-alpha-1
+|------ ISIC-2016-vit-no-filtering
+```
+
 To evaluate the `performance` of all trained models on the oversampled ISIC-2016 dataset and its variants, run the following script:
 
 ```
