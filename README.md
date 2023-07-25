@@ -3,7 +3,7 @@ This is the official code for our CosSIF paper:<br/>[CosSIF: Cosine Similarity-b
 inter-class variation in synthetic medical image datasets]()
 
 <p align="left">
-<img src="plots/outputs/Pipeline.png" alt="image_description" style="padding: 5px" width="65%">
+<img src="plots/diagrams/preprint/fig-pipeline.png" alt="image_description" style="padding: 5px" width="65%">
 </p>
 
 ## 1. Specification of dependencies
