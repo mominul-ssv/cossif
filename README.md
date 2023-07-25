@@ -1,5 +1,5 @@
 # CosSIF: Cosine Similarity-based Image Filtering
-This is the official code for our CosSIF paper:<br/>[CosSIF: Cosine Similarity-based Image Filtering to overcome low
+This is the official code for our CosSIF paper:<br/>[CosSIF: Cosine similarity-based image filtering to overcome low
 inter-class variation in synthetic medical image datasets]()
 
 <p align="left">
