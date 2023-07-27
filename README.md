@@ -229,3 +229,8 @@ This code utilizes the following models for fine-tuning:
 - https://huggingface.co/microsoft/swin-tiny-patch4-window7-224
 - https://huggingface.co/google/vit-base-patch16-224
 - https://huggingface.co/facebook/convnext-tiny-224
+
+## 5. License
+- Copyright @ Mominul Islam.
+- ORCID iD: https://orcid.org/0009-0001-6409-964X
+- Copy or sharing of this code is strictly prohibited until further notice.
