@@ -6,7 +6,7 @@ __Preprint:__ https://arxiv.org/abs/2307.13842  <br>
 __Journal:__ Under Review. <br>
 
 <p align="left">
-<img src="plots/diagrams/preprint/fig-pipeline.png" alt="image_description" style="padding: 5px" width="65%">
+<img src="plots/github/fig-pipeline.png" alt="image_description" style="padding: 5px" width="65%">
 </p>
 
 ## 1. Specification of dependencies
@@ -221,6 +221,68 @@ We provide our pre-trained models on [GitHub Releases](https://github.com/mominu
 | HAM10000 | ConvNeXt | FAGT (α = 0.85) | **94.44** | **84.06** | [download](https://github.com/mominul-ssv/cossif/releases/download/v1.0.0/ham10000-convnext-fagt-alpha-3.zip) |
 
 ## 4. Demo
+We offer CosSIF as an end-to-end module, available on [PyPI](https://pypi.org/project/cossif/). To implement this filtering method, kindly adhere to the subsequent instructions:
+
+Suppose we are presented with two categories of skin lesions: benign and malignant. Our objective is to sift out benign images that bear resemblance to malignant ones, and similarly, malignant images that bear resemblance to benign ones.
+
+```python
+from cossif import cossif
+```
+
+```python
+csf = cossif.CosSIF()
+```
+
+```python
+# Filter benign images
+csf.calculate_and_filter(
+    target_path=cls_benign,              # Path to the folder that contains benign images.
+    secondary_path=cls_malignant,        # Path to the folder that contains malignant images.
+    filtered_path=cls_benign_filtered,   # Path to the folder that will contain filtered benign images.
+    removed_path=cls_benign_removed,     # Path to the folder that will contain removed benign images.
+    record_save_path=save_path,          # Save path of the similarity calculation record.
+    record_keep=False,                   # Chose whether to keep the similarity calculation record or not.
+    file_name='t_benign_x_s_malignant',  # Name of the similarity calculation record file.
+    filter_type='dissimilar',            # Type of filtering. Can be either "similar" or "dissimilar".
+    filter_range=0.85,                   # The filtering ratio. A value of 0.85 means that 15% of the images will be removed.
+)
+```
+
+<p align="left">
+<img src="plots/github/benign.png" alt="image_description" style="padding: 5px" width="65%">
+</p>
+<p align="left">
+<img src="plots/github/benign_filtered.png" alt="image_description" style="padding: 5px" width="65%">
+</p>
+<p align="left">
+<img src="plots/github/benign_removed.png" alt="image_description" style="padding: 5px" width="65%">
+</p>
+
+```python
+# Filter malignant images
+csf.calculate_and_filter(
+    target_path = cls_malignant,
+    secondary_path = cls_benign,
+    filtered_path=cls_malignant_filtered,
+    removed_path=cls_malignant_removed,
+    record_save_path = save_path,
+    record_keep=False,
+    file_name = 't_malignant_x_s_benign',
+    filter_type = 'similar',
+    filter_range = 0.85,
+)
+```
+
+<p align="left">
+<img src="plots/github/malignant.png" alt="image_description" style="padding: 5px" width="65%">
+</p>
+<p align="left">
+<img src="plots/github/malignant_filtered.png" alt="image_description" style="padding: 5px" width="65%">
+</p>
+<p align="left">
+<img src="plots/github/malignant_removed.png" alt="image_description" style="padding: 5px" width="65%">
+</p>
+
 
 ## 5. Citation
 
