@@ -249,13 +249,13 @@ csf.calculate_and_filter(
 ```
 
 <p align="left">
-<img src="plots/github/benign.png" alt="image_description" style="padding: 5px" width="65%">
+<img src="plots/github/benign.png" alt="image_description" style="padding: 5px" width="100%">
 </p>
 <p align="left">
-<img src="plots/github/benign_filtered.png" alt="image_description" style="padding: 5px" width="65%">
+<img src="plots/github/benign_filtered.png" alt="image_description" style="padding: 5px" width="100%">
 </p>
 <p align="left">
-<img src="plots/github/benign_removed.png" alt="image_description" style="padding: 5px" width="65%">
+<img src="plots/github/benign_removed.png" alt="image_description" style="padding: 5px" width="100%">
 </p>
 
 ```python
@@ -274,13 +274,13 @@ csf.calculate_and_filter(
 ```
 
 <p align="left">
-<img src="plots/github/malignant.png" alt="image_description" style="padding: 5px" width="65%">
+<img src="plots/github/malignant.png" alt="image_description" style="padding: 5px" width="100%">
 </p>
 <p align="left">
-<img src="plots/github/malignant_filtered.png" alt="image_description" style="padding: 5px" width="65%">
+<img src="plots/github/malignant_filtered.png" alt="image_description" style="padding: 5px" width="100%">
 </p>
 <p align="left">
-<img src="plots/github/malignant_removed.png" alt="image_description" style="padding: 5px" width="65%">
+<img src="plots/github/malignant_removed.png" alt="image_description" style="padding: 5px" width="100%">
 </p>
 
 
