@@ -51,9 +51,9 @@ class UMAP:
             num_classes = len(unique_labels)
 
             fig, ax = plt.subplots(figsize=(width, height))
-            sc = ax.scatter(embedding[:, 0], embedding[:, 1], c=numeric_labels, cmap=cmap, s=4)
+            sc = ax.scatter(embedding[:, 0], embedding[:, 1], c=numeric_labels, cmap=cmap, s=5)
             ax.set_aspect('equal', 'datalim')
-            ax.set_title(f'{title}', fontsize=13, weight='bold')
+            ax.set_title(f'{title}', fontsize=15, weight='bold')
             ax.set_xticklabels([])
             ax.set_yticklabels([])
 
@@ -62,7 +62,7 @@ class UMAP:
                 cbar.set_ticks(np.arange(num_classes))
 
                 # Adjust font size and rotation for legend text
-                cbar.ax.tick_params(labelsize=12, pad=8)  # You can adjust the fontsize and padding values
+                cbar.ax.tick_params(labelsize=14, pad=8)  # You can adjust the fontsize and padding values
                 cbar.set_ticklabels(unique_labels, rotation=90)
 
                 # Center-align the legend text
@@ -142,7 +142,7 @@ class UMAP:
             ax.scatter(selected_data[:, 0], selected_data[:, 1], selected_data[:, 2], label=label)
 
         if legend==True:
-            legend = ax.legend(fontsize=25, ncol=4, bbox_to_anchor=(1, 1.1))
+            legend = ax.legend(fontsize=42, ncol=3, bbox_to_anchor=(1, 1.1))
             # Make the border and background of the legend invisible
             legend.get_frame().set_linewidth(0)
             legend.legendPatch.set_alpha(0)
@@ -150,7 +150,7 @@ class UMAP:
             for handle in legend.legend_handles:
                 handle.set_sizes([500])
 
-        ax.set_title(f'{title}', fontsize=35, loc='center', y=-0.1, weight='bold')
+        ax.set_title(f'{title}', fontsize=45, loc='center', y=-0.1, weight='bold')
         ax.set_xticklabels([])
         ax.set_yticklabels([])
         ax.set_zticklabels([])
@@ -161,7 +161,7 @@ class UMAP:
                 fig.savefig(f'{save_dir}/{save_name}.jpg', dpi=dpi, bbox_inches='tight')
         
         
-    def plot_3d(self, folder_path, start_limit=0, end_limit=0, title='', legend=True, save_fig=False, save_dir='', save_name='', dpi=150,
+    def plot_3d(self, folder_path, start_limit=0, end_limit=0, title='', legend=True, save_fig=False, save_dir='', save_name='', dpi=300,
                 angle_1=30, angle_2=45):
         
         self._umap_engine_3d(
