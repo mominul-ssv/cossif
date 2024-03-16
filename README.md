@@ -1,9 +1,7 @@
 # CosSIF: Cosine Similarity-based Image Filtering
-This is the official code for our __*CosSIF: Cosine similarity-based image filtering to overcome low
-inter-class variation in synthetic medical image datasets*__ paper. <br>
+This is the official code for our [__*CosSIF: Cosine similarity-based image filtering to overcome low inter-class variation in synthetic medical image datasets*__](https://doi.org/10.1016/j.compbiomed.2024.108317) paper. <br>
 
-__Preprint:__ https://arxiv.org/abs/2307.13842  <br>
-__Journal:__ Under Revision. <br>
+__Journal:__ Computers in Biology and Medicine, Volume 172, April 2024, 108317 <br>
 
 <p align="left">
 <img src="plots/github/fig-pipeline.png" alt="image_description" style="padding: 5px" width="100%">
