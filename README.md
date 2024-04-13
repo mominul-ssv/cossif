@@ -1,11 +1,16 @@
-# CosSIF: Cosine Similarity-based Image Filtering
-This is the official code for our [__*CosSIF: Cosine similarity-based image filtering to overcome low inter-class variation in synthetic medical image datasets*__](https://doi.org/10.1016/j.compbiomed.2024.108317) paper. <br>
-
-__Journal:__ Computers in Biology and Medicine, Volume 172, April 2024, 108317 <br>
+## CosSIF: Cosine Similarity-based Image Filtering
 
 <p align="left">
 <img src="plots/github/fig-pipeline.png" alt="image_description" style="padding: 5px" width="100%">
 </p>
+
+<b>CosSIF: Cosine similarity-based image filtering to overcome low inter-class variation in synthetic medical image datasets</b>
+
+<p>Mominul Islam, Hasib Zunair, Nabeel Mohammed</p>
+ 
+[https://doi.org/10.1016/j.compbiomed.2024.108317](https://doi.org/10.1016/j.compbiomed.2024.108317)<br>
+
+<p>Abstract: <i>Crafting effective deep learning models for medical image analysis is a complex task, particularly in cases where the medical image dataset lacks significant inter-class variation. This challenge is further aggravated when employing such datasets to generate synthetic images using generative adversarial networks (GANs), as the output of GANs heavily relies on the input data. In this research, we propose a novel filtering algorithm called Cosine Similarity-based Image Filtering (CosSIF). We leverage CosSIF to develop two distinct filtering methods: Filtering Before GAN Training (FBGT) and Filtering After GAN Training (FAGT). FBGT involves the removal of real images that exhibit similarities to images of other classes before utilizing them as the training dataset for a GAN. On the other hand, FAGT focuses on eliminating synthetic images with less discriminative features compared to real images used for training the GAN. The experimental results reveal that the utilization of either the FAGT or FBGT method reduces low inter-class variation in clinical image classification datasets and enables GANs to generate synthetic images with greater discriminative features. Moreover, modern transformer and convolutional-based models, trained with datasets that utilize these filtering methods, lead to less bias toward the majority class, more accurate predictions of samples in the minority class, and overall better generalization capabilities.</i></p>
 
 ## 1. Specification of dependencies
 This code requires two separate conda environments. Run the following to install the required packages on Windows.
@@ -283,6 +288,17 @@ csf.calculate_and_filter(
 
 
 ## 5. Citation
+```
+@article{islam2024cossif,
+  title={CosSIF: Cosine similarity-based image filtering to overcome low inter-class variation in synthetic medical image datasets},
+  author={Islam, Mominul and Zunair, Hasib and Mohammed, Nabeel},
+  journal={Computers in Biology and Medicine},
+  volume={172},
+  pages={108317},
+  year={2024},
+  publisher={Elsevier}
+}
+```
 
 ### Acknowledgements
 This code base is built on top of the following repositories:
@@ -296,4 +312,3 @@ This code utilizes the following models for fine-tuning:
 ## 5. License
 - Copyright @ Mominul Islam.
 - ORCID iD: https://orcid.org/0009-0001-6409-964X
-- Copy or sharing of this code is strictly prohibited until further notice.
