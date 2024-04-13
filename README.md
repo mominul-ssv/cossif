@@ -310,5 +310,5 @@ This code utilizes the following models for fine-tuning:
 - https://huggingface.co/facebook/convnext-tiny-224
 
 ## 5. License
-- Copyright @ Mominul Islam.
+- Copyright © Mominul Islam.
 - ORCID iD: https://orcid.org/0009-0001-6409-964X
